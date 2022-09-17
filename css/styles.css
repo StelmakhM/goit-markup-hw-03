@@ -122,8 +122,8 @@ ul {
 
 .navigation-contact:focus,
 .navigation-contact:hover,
-.navigation-item:focus,
-.navigation-item:hover {
+.contacts-item:focus,
+.contacts-item:hover {
     color: var(--hover-color)
 }
 
