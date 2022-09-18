@@ -188,7 +188,7 @@ ul {
 }
 
 .features-item {
-    min-width: calc((100%-90px)/4);
+    width: calc((100%-90px)/4);
 }
 
 .features-subtitle {
