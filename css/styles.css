@@ -323,6 +323,11 @@ ul {
 }
 
 
+.product-list li {
+    background: #fff;
+    outline: 1px solid #eee;
+}
+
 .product-item {
     text-decoration: none;
 
