@@ -362,7 +362,9 @@ ul {
     padding-left: 24px;
     padding-bottom: 20px;
     padding-top: 20px;
-    border: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
 }
 
 
