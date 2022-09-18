@@ -50,8 +50,8 @@ ul {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-
 }
+
 
 /* Header */
 
@@ -187,6 +187,10 @@ ul {
     margin-right: 30px;
 }
 
+.features-item {
+    min-width: calc((100%-90px)/4);
+}
+
 .features-subtitle {
     margin-bottom: 10px;
 
@@ -224,6 +228,11 @@ ul {
 
 .about-list li:not(:last-child) {
     margin-right: 30px;
+}
+
+
+.team {
+    background-color: #F5F4FA;
 }
 
 .team-list {
