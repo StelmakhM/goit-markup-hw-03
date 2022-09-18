@@ -1,3 +1,6 @@
+/* Default settings */
+
+
 :root {
     --main-color: #212121;
     --accessory-color: #FFFFFF;
@@ -7,7 +10,6 @@
     --background-color: #2F303A;
     --logo-color: #000000;
     --adress-color: rgba(255, 255, 255, 0.6);
-
 }
 
 *,
@@ -15,8 +17,6 @@
 *::after {
     box-sizing: border-box;
 }
-
-
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -31,15 +31,6 @@ img {
     height: auto;
 }
 
-h1,
-h2,
-h3,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -50,6 +41,32 @@ ul {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+/* Reset */
+
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -67,7 +84,6 @@ ul {
 }
 
 .logo {
-
     margin-right: 93px;
 
     font-family: 'Raleway';
@@ -75,9 +91,9 @@ ul {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    color: var(--logo-color);
     text-decoration: none;
     outline: none;
+    color: var(--logo-color);
 }
 
 .logo-span {
@@ -115,8 +131,8 @@ ul {
 .contacts-item {
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--contacts-color);
     text-decoration: none;
+    color: var(--contacts-color);
 }
 
 
@@ -131,15 +147,16 @@ ul {
     color: var(--hover-color)
 }
 
+
 /* Main index.html */
 
-
+/* Hero */
 
 
 .hero {
-    background-color: var(--background-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: var(--background-color);
     text-align: center;
 }
 
@@ -178,6 +195,9 @@ ul {
 }
 
 
+/* Features */
+
+
 .features-list {
     list-style: none;
     display: flex;
@@ -207,6 +227,9 @@ ul {
     color: var(--contacts-color);
 }
 
+
+/* About  */
+
 .about {
     padding-bottom: 94px;
 }
@@ -231,6 +254,8 @@ ul {
 }
 
 
+/* Team */
+
 .team {
     background-color: #F5F4FA;
 }
@@ -250,7 +275,6 @@ ul {
 .team-list li:not(:last-child) {
     margin-right: 30px;
 }
-
 
 .team-title {
     margin-bottom: 50px;
@@ -285,13 +309,18 @@ ul {
     color: var(--contacts-color);
 }
 
+
 /* Main portfolio.html */
 
+/* Filter */
+
+
 .filter-list {
+    margin-bottom: 50px;
+
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
 }
 
 .filter-list li:not(:last-child) {
@@ -324,13 +353,24 @@ ul {
     border-radius: 4px;
 }
 
+
+/* Product */
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
+
+
 .product-list {
+    gap: 30px;
+
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
 }
-
 
 .product-list li {
     background: #fff;
@@ -348,7 +388,8 @@ ul {
 
 .product-title {
     margin-bottom: 4px;
-    padding-left: 24px;
+    /* padding-left: 24px; */
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -356,8 +397,9 @@ ul {
 }
 
 .product-text {
-    padding-bottom: 20px;
-    padding-left: 24px;
+    /* padding-bottom: 20px; */
+    /* padding-left: 24px; */
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
